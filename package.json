@@ -1,7 +1,7 @@
 {
-  "name": "webpack-plugin",
+  "name": "wp-webpack-example",
   "version": "1.0.0",
-  "description": "=== Plugin Name === Contributors: (this should be a list of wordpress.org userid's) Donate link: https://github.com/GarySwift Tags: comments, spam Requires at least: 3.0.1 Tested up to: 3.4 Stable tag: 4.3 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html",
+  "description": "Simple WordPress plugin that uses Webpack.",
   "main": "index.js",
   "babel": {
     "presets": [
@@ -9,37 +9,23 @@
     ]
   },
   "scripts": {
-    "start": "gulp watch --watch --mode development",
-    "build": "gulp build --mode production"
+    "watch": "webpack --mode=development --watch --config webpack-config.js",
+    "build": "webpack --mode=production --config webpack-config.js"
   },
   "keywords": [
     "wordpress",
     "webpack",
     "javascript"
   ],
-  "author": "Gary Swift",
-  "license": "ISC",
+  "author": "WebDevStudios",
+  "license": "GPL-2.0+",
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "babel-loader": "^8.0.6",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-csso": "^3.0.1",
-    "gulp-if": "^3.0.0",
-    "gulp-livereload": "^4.0.2",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "webpack-stream": "^5.2.1",
-    "yargs": "^14.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Newbie-Up/wp-myob.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Newbie-Up/wp-myob/issues"
-  },
-  "homepage": "https://github.com/Newbie-Up/wp-myob#readme"
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "lodash": "^4.17.11",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
