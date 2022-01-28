@@ -43,6 +43,8 @@
   },
   "homepage": "https://github.com/Newbie-Up/wp-myob#readme",
   "dependencies": {
+    "client-oauth2": "^4.3.3",
+    "express": "^4.17.2",
     "simple-oauth2": "^4.3.0"
   }
 }

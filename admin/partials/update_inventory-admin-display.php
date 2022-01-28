@@ -13,5 +13,6 @@
  */
 
 ?>
-<h1 id="test">good</h1>
+<button id="update"><a href="https://secure.myob.com/oauth2/account/authorize?client_id=d907c2fd-aae8-4ecb-bf59-d54eeace9012&redirect_uri=https://www.dexdevelopment.com.au&response_type=code&scope=CompanyFile">Update Inventory</a></button>
+<button id="test"></button>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
