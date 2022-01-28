@@ -41,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/Newbie-Up/wp-myob/issues"
   },
-  "homepage": "https://github.com/Newbie-Up/wp-myob#readme"
+  "homepage": "https://github.com/Newbie-Up/wp-myob#readme",
+  "dependencies": {
+    "simple-oauth2": "^4.3.0"
+  }
 }
