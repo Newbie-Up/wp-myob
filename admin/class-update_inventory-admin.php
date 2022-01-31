@@ -119,4 +119,22 @@ class Update_inventory_Admin {
 	public function render_page (){
 		include dirname( __FILE__ ) . "/partials/update_inventory-admin-display.php";
 	}
+
+
+	/**
+	 * Retrieve access code in url after redirect
+	 */
+	public function get_access_code(){
+
+		if(isset($_GET['code'])){
+			$code = $_GET['code'];
+			print_r ( $code );
+		} else {
+			echo "No Access Code found, Please authenticate first.";
+		}
+
+
+
+	}
+
 }

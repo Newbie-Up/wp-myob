@@ -13,13 +13,18 @@ import grant from './lib/grant';
 
 ( function ( $ ) {
     'use strict';
-    // component();
-    const code = grant.getCode();
 
-    // const grant = new GrantMyob();
-    console.log( "======================" );
-    console.log( code );
-    console.log( "======================" );
+    // $( document ).ready( function () {
 
-    console.log( $( "#test" ) );
+    //     // component();
+    //     const code = grant.getCode();
+
+    //     if ( code ) grant.getAccessToken( code );
+
+    //     // const grant = new GrantMyob();
+    //     console.log( "======================" );
+    //     console.log( code );
+    //     console.log( "======================" );
+    // } )
+
 } )( jQuery );

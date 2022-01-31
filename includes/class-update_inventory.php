@@ -157,7 +157,14 @@ class Update_inventory {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+
+		//register admin menu page
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'register_menu_page');
+
+		//register get_access_code action
+		$this->loader->add_action( 'get_access_code', $plugin_admin, 'get_access_code' );
+
+
 	}
 
 	/**
